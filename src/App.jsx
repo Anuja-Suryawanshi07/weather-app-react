@@ -15,7 +15,7 @@ export default function App() {
   const [weatherIcon, setWeatherIcon] = useState("01d");
 
 
-  const API_KEY="5b64c198cd61ee76994285b2817ea33c"
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
   const fetchWeather= async()=>{
     console.log(search);
